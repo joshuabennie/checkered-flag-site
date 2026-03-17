@@ -1,0 +1,234 @@
+/* ===============================
+   GLOBAL PAGE STYLING
+================================ */
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #000000,
+    #111111,
+    #1a1a1a,
+    #2b0000,
+    #660000
+  );
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5e5e5;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.main-container {
+  background: rgba(20, 20, 20, 0.96);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(255, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar {
+  background: #0d0d0d !important;
+}
+
+.navbar-brand {
+  color: #ff3b3b !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #cccccc !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* ===============================
+   HERO SECTION (LOGO CIRCLE)
+================================ */
+
+.shop-badge {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: radial-gradient(circle, #111 40%, #000 100%);
+  border: 6px solid #ffcc00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+.flag-icon {
+  width: 82%;
+  height: 82%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transform: scale(1.30);
+  filter:
+    brightness(1.1)
+    contrast(1.15)
+    drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+}
+
+.shop-badge-inner {
+  text-align: center;
+  color: #ffcc00;
+}
+
+.shop-badge-inner h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff3b3b;
+}
+
+.shop-badge-inner p {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* ===============================
+   TEXT
+================================ */
+
+h1, h2, h3, h4, h5 {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #aaaaaa !important;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ff0000, #800000);
+}
+
+.btn-outline-primary {
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+.btn-outline-primary:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* ===============================
+   FEATURE BANNER
+================================ */
+
+.bg-dark-custom {
+  background: linear-gradient(
+    135deg,
+    #1a0000,
+    #660000
+  );
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  box-shadow:
+    0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+/* ===============================
+   CARDS
+================================ */
+
+.card {
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 30px rgba(255, 0, 0, 0.25);
+}
+
+.card-title {
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+.card-text {
+  color: #cccccc;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+  margin-top: 60px;
+  background: #000;
+}
+
+footer p {
+  color: #aaa;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 767.98px) {
+  .main-container {
+    padding: 25px;
+  }
+
+  .shop-badge {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+}
